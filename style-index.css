@@ -10,3 +10,13 @@ body {
     background-color: #ffffff;
     margin: 0 auto;
 }
+nav{
+    padding-right: 10px; /*Top Right Bottom Left*/
+
+}
+
+nav a{
+     margin-right: 15px;
+     text-decoration: none;
+     
+}
