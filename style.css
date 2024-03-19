@@ -99,3 +99,14 @@ section {
   border-radius: 10px;
   background-color: rgba(207, 207, 207, 0.5);
 }
+
+.btn-inscrever {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
