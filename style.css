@@ -57,14 +57,13 @@ section {
   align-items: center;
   gap: 1rem;
   height: 100%;
+  padding: 4rem;
 }
 
 #historias {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 4rem;
-  gap: 6rem;
 }
 
 .historias {
@@ -76,6 +75,23 @@ section {
 }
 
 .card-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(207, 207, 207, 0.5);
+}
+
+#cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.curso {
   display: flex;
   flex-direction: column;
   gap: 1rem;
