@@ -110,3 +110,22 @@ section {
   color: white;
   cursor: pointer;
 }
+
+#cantinas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+.cantina {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(207, 207, 207, 0.5);
+  justify-content: left
+}
