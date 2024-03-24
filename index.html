@@ -135,46 +135,70 @@
       </div>
     </section>
     
-    <table>
-      <thead>
-          <tr>
-              <th>Class Name</th>
-              <th>Teacher Name</th>
-              <th>Hour</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Potion Making</td>
-              <td>Professor Snape</td>
-              <td>9:00 AM</td>
-          </tr>
-          <tr>
-              <td>Charms</td>
-              <td>Professor Flitwick</td>
-              <td>10:30 AM</td>
-          </tr>
-          <tr>
-              <td>Transfiguration</td>
-              <td>Professor McGonagall</td>
-              <td>1:00 PM</td>
-          </tr>
-          <tr>
-              <td>Defence Against the Dark Arts</td>
-              <td>Professor Lupin</td>
-              <td>2:30 PM</td>
-          </tr>
-          <tr>
-              <td>Herbology</td>
-              <td>Professor Sprout</td>
-              <td>4:00 PM</td>
-          </tr>
-          <tr>
-              <td>Astronomy</td>
-              <td>Professor Sinistra</td>
-              <td>7:00 PM</td>
-          </tr>
-      </tbody>
-    </table>
+    <section id="inscreva-se">
+      <form>
+        <h2>Cursos</h2>
+        <p>Junte-se conosco em nossos cursos</p>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Nome" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Email"/>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso">
+          <option value="" disabled selected>Selecione um curso</option>
+          <option value="mandala">Mandala das Pedras</option>
+          <option value="ervas">Magia das Ervas</option>
+          <option value="elementais">Feitiços Elementais</option>
+          <option value="historia">História da Bruxaria</option>
+        </select>
+
+        <button type="submit">Inscrever-se</button>
+      </form>
+
+      <table>
+        <thead>
+            <tr>
+                <th>Class Name</th>
+                <th>Teacher Name</th>
+                <th>Hour</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Potion Making</td>
+                <td>Professor Snape</td>
+                <td>9:00 AM</td>
+            </tr>
+            <tr>
+                <td>Charms</td>
+                <td>Professor Flitwick</td>
+                <td>10:30 AM</td>
+            </tr>
+            <tr>
+                <td>Transfiguration</td>
+                <td>Professor McGonagall</td>
+                <td>1:00 PM</td>
+            </tr>
+            <tr>
+                <td>Defence Against the Dark Arts</td>
+                <td>Professor Lupin</td>
+                <td>2:30 PM</td>
+            </tr>
+            <tr>
+                <td>Herbology</td>
+                <td>Professor Sprout</td>
+                <td>4:00 PM</td>
+            </tr>
+            <tr>
+                <td>Astronomy</td>
+                <td>Professor Sinistra</td>
+                <td>7:00 PM</td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
