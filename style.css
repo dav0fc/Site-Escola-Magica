@@ -1,3 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +79,43 @@
   box-sizing: border-box;
 }
 
-html,body {
-  height: max-content;
-  width: 100vw;
-  transition: linear 200ms;
+html {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  background-image: url('./assets/images/Fundo_IFAM.png');
+  background-repeat: repeat;
+  font-family: Roboto, sans-serif;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+html,body {
+  height: max-content;
+  width: 100%;
+  transition: linear 200ms;
+  color: white;
+  scroll-behavior: smooth;
 }
 
 header {
-  width: 100%;
-  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  background-color: #18321d;
   padding: 2rem;
-  background-color: #333;
+  border-radius: 6px;
+}
+
+body {
+  width: max-content;
+  height: fit-content;
+  margin: 6rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1280px;
+  border-radius: 12px;
 }
 
 nav {
@@ -40,25 +135,32 @@ a {
   text-align: center;
 }
 
-main {
-  background-image: url(https://i.pinimg.com/originals/5d/fb/73/5dfb733436284bc01415abf9d405c66c.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  height: 88vh;
-  width: 100%;
-  color: white;
-}
-
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
   height: 100%;
-  padding: 4rem;
+  padding: 4rem 6rem 4rem 6rem;
+  border-radius: 6px;
+  background-color: #18321d;
 }
+
+section > h2 {
+  align-self: flex-start;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: #f4f4f4;
+  color: #18321d;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 
 #historias {
   display: flex;
@@ -68,8 +170,7 @@ section {
 
 .historias {
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
+  flex-direction: column;
   gap: 2rem;
   border-radius: 10px;
 }
@@ -80,52 +181,72 @@ section {
   gap: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: rgba(207, 207, 207, 0.5);
 }
 
 #cursos {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .curso {
   display: flex;
   flex-direction: column;
+}
+ 
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: rgba(207, 207, 207, 0.5);
+}
+
+.form-item {
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 4px;
+  border: none;
+}
+
+label {
+  display: none;
 }
 
 .btn-inscrever {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
+  font-size: medium;
+  height: 40px;
+  padding: 0 1rem;
   border-radius: 4px;
-  background-color: #333;
-  color: white;
+  border: none;
+  background-color: rgb(225, 225, 225);
+  color:#18321d;
   cursor: pointer;
 }
 
-#cantinas {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 2rem;
+  color: black;
+  border-radius: 12px;
 }
 
-.cantina {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: rgba(207, 207, 207, 0.5);
-  justify-content: left
+thead {
+  background-color: #594b1c;
+  color: white;
 }
+
+thead > tr > th {
+  background-color: rgb(219, 219, 219);
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.8rem 2.4rem;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #594b1c}
